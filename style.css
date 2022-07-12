@@ -1,0 +1,72 @@
+body {
+  height: 350px;
+  width: 275px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#fillInInput {
+  color: #fff;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+#fillInInput:hover {
+  background-color: rgb(100, 33, 163);
+}
+
+#like {
+  width: 30px;
+  height: 26px;
+  margin: 0 auto;
+  background-color: rgb(180, 180, 180);
+  background-image: url(./images/like.png);
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+#like:hover {
+  background-color: rgb(250, 71, 125);
+}
+
+.margin_top {
+  margin-top: 10px;
+}
+
+.canvas_size input{
+  display: none;
+}
+
+.canvas_size span{
+  display: block;
+}
+
+.canvas_size input + span {
+  text-align: center;
+  padding: 5px;
+  border: 1 solid #444;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.canvas_size input:checked + span {
+  background-color: rgb(191, 203, 241);
+}
+
+#displayLandscapeNo,
+#displayMeditationNo {
+  display: inline;
+}
